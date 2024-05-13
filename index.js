@@ -1,7 +1,7 @@
 const { emit } = require("nodemon");
 const { Socket } = require("socket.io");
 
-const io = require("socket.io")(3333, {
+const io = require("socket.io")(process.env.PORT, {
     cors: {
         origin: "http://localhost:3000",
     },
